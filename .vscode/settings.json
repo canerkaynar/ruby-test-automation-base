@@ -1,0 +1,29 @@
+{
+    "cucumberautocomplete.steps": [
+        "features/step_definitions/*.rb"
+    ],
+    "cucumberautocomplete.syncfeatures": "features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    },
+    "[ruby]": {
+        "editor.formatOnSave": true
+    },
+    "ruby.format": "rubocop",
+    "editor.formatOnSaveTimeout": 1500,
+    // Basic settings: turn linter(s) on
+    "ruby.lint": {
+        "reek": false,
+        "rubocop": true,
+        "ruby": true, //Runs ruby -wc
+        "fasterer": true,
+        "debride": true,
+        "ruby-lint": false
+    },
+    // Time (ms) to wait after keypress before running enabled linters. Ensures
+    // linters are only run when typing has finished and not for every keypress
+    "ruby.lintDebounceTime": 500,
+}

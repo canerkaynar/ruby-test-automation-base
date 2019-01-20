@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cucumber",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/bundle",
+            //"program": "/usr/local/bin/bundle",
+            "args": [
+                "exec",
+                "cucumber",
+                "-t",
+                "@debugger"
+            ]
+        },
+        {
+            "name": "Debug Ruby Local File",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${file}"
+        }
+    ]
+}
