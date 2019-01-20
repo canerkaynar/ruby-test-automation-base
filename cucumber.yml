@@ -1,0 +1,12 @@
+default: -p pretty -p prod -p html -p chrome
+
+pretty: --format pretty
+
+test: ENV_TYPE=test
+prod: ENV_TYPE=prod
+
+html:  --format html --out=results/report.html
+json:  --format json --out=results/report.json
+
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless  
